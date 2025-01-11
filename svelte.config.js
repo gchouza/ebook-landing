@@ -4,7 +4,7 @@ import vercel from '@sveltejs/adapter-vercel';
 const config = {
   kit: {
     adapter: vercel({
-      runtime: 'nodejs20', // Specify Node.js 20 runtime for Vercel
+      runtime: 'nodejs18.x', // Use the supported Node.js runtime
     }),
     alias: {
       $components: 'src/lib/components',
